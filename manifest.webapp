@@ -1,0 +1,14 @@
+
+{
+  "name": "My App",
+  "description": "My elevator pitch goes here",
+  "launch_path": "/form.html",
+  "icons": {
+    "128": "/logo_nitw.png"
+  },
+  "developer": {
+    "name": "Sreerag Sreerag,Vivek Unni",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en"
+}

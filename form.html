@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<title>Test APP</title>
+<center><body background="Untitled-1.jpg">
+<h1><br><br><br><br>WELCOME TO THE TEACHER TIMETABLE APP</h1></center>
+<script language="javascript">
+function pasuser(form) {
+    if (form.id.value=="Admin") { 
+    if (form.pass.value=="root")
+         {              
+            location="menu.html" 
+         } 
+         else 
+         {
+           alert("Invalid Password")
+         }
+       } 
+       else 
+       	{  
+       		alert("Invalid UserID")
+        }
+   }
+   
+</script>
+<br>
+<center>
+<table bgcolor="grey" cellpadding="1" border="1">
+<tr><td colspan="2">
+<tr><td><i><b>UserID:</b></i></td><td><form name="login"><input
+name="id" type="text"></td></tr>
+<tr><td><i><b>Password:</b></i></td><td><input name="pass"
+type="password"></td></tr>
+<tr><td><center><input type="button" value="Login"
+onClick="pasuser(this.form)"></center></td><td><center><br><input
+type="Reset"></form></td></tr></table></center> 
+</body>
+</html>

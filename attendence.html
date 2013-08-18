@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<body background="images.jpg">
+<script language="javascript">
+function validate()
+{
+var chks = document.getElementsByName('names[]');
+var hasChecked = false;
+var chkcount=0;
+for (var i = 0; i < chks.length; i++)
+{
+while(chks[i].checked)
+{
+hasChecked = true;
+chkcount++;
+i++;
+}
+
+
+
+}
+if (hasChecked == false)
+{
+alert("Please select at least one.");
+}
+alert("The number of students in the class is "+ chkcount);
+}
+</script>
+</head>
+<body>
+<center>
+<form name="form1" onSubmit="return validate()"><br><br><br>
+Students list is <br>
+<input type="checkbox" name="names[]" value="sreerag" id="sreerag">1.Sreerag <br> 
+<input type="checkbox" name="names[]" value="Vivek" id="Vivek">2.Vivek <br>
+<input type="checkbox" name="names[]" value="Aman" id="Aman">3.Aman <br>
+<input type="checkbox" name="names[]" value="Srikar" id="Srikar">4.Srikar <br>
+<input type="checkbox" name="names[]" value="Soumik" id="Soumik">5.Soumik<br>
+<input type="checkbox" name="names[]" value="Hadi" id="Hadi">6.Hadi <br> 
+<br>
+<input type="submit" value="submit" name="submit"/>
+</center>
+<INPUT Type="BUTTON" VALUE="Back" ONCLICK="window.location.href='menu.html'"> <br><br>
+</FORM>
+</form>
+</body>
+</html>
